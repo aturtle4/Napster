@@ -17,6 +17,8 @@ root = tkinter.Tk()
 root.title("NAPSTER2.0")
 root.geometry('455x700')
 root.resizable(False,False)
+if not os.path.exists('Songs'):
+    os.makedirs('Songs')
 #place icon image here
 #place main backgound image here
 def downloadcanvas():
